@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
+# Name:        racquetball.py
+# Purpose:	simulates several matches of racquetball
 #
-# Author:      FruityLoops
+# Author:      Adrienne Sands
 #
 # Created:     05/05/2013
-# Copyright:   (c) FruityLoops 2013
+# Copyright:   (c) Adrienne Sands 2013
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 from random import random
