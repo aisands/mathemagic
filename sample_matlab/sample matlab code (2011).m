@@ -1,3 +1,4 @@
+%Author: Adrienne Sands (2011)
 %Sample code only. Please see /sample_analysis/sample nonparametric analysis for full analysis
 %Questions available here: http://www.math.wustl.edu/~nlin/math408/exam/final.htm
 
