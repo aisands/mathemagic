@@ -1,0 +1,29 @@
+package lab3;
+
+public class Division {
+	int a;
+
+	public Division (int a){
+		this.a = a; 
+
+	}
+
+	public int divide(int b){ //assumes b nonzero 
+		int ans = 0;
+		int i   = a;
+
+		if (a<=0 && b<0 || a>=0 && b>0){ //a and b the same sign
+			while (Math.abs(i)>= Math.abs(b)) {
+				i   =   i - b;
+				ans = ans + 1;
+			}
+			return ans;
+		}
+		else //a and b different signs
+			while (Math.abs(i)>= Math.abs(b)){
+				i = i + b;
+				ans = ans - 1;
+			}
+		return ans;
+	}
+} 

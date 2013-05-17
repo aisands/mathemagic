@@ -1,0 +1,20 @@
+package lab3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DivisionTest {
+	Division fifteen = new Division(15);
+	Division negativeFifteen = new Division (-15);
+	
+
+	@Test
+	public void testDivide() {
+		assertEquals (fifteen.divide(3), 5);
+		assertEquals (fifteen.divide(-5), -3);
+		assertEquals (negativeFifteen.divide(3), -5);
+		assertEquals (negativeFifteen.divide(-5), 3);
+	}
+
+}

@@ -1,0 +1,40 @@
+CSE131 Standard Cover Page
+
+By submitting this assignment, you certify that you have read, understood, and complied with
+the CSE 131 Collaboration Policy.
+
+You are also certifying that the following information is complete and truthful.
+
+Name: Adrienne Sands
+Email Address: adrienne.i.sands@gmail.com
+Lab Section:
+
+CSE131 Lab 6
+
+Approximate number of hours you spent on this assignment: 2
+Challenge level of this assignment (1 = very easy; 10 = very challenging): 3
+Learning value of this assignment (1 = didn't learn anything; 10 = learned a lot):4 
+
+Check one of the following:
+
+[ X] I worked on this lab entirely on my own, with help only from the TAs and the instructor.
+
+[ ] I received help from the following people or sources (other than the TAs or instructor).
+
+    List names here:
+    
+    
+[ ] I completed this lab using pair programming techniques with the following CSE 131 student.
+
+    Name of partner:
+    
+
+Did you complete any optional extensions to this assignment?  If so, which one(s)?
+Yes
+
+If there is anything else we should know about your work on this assignment, please
+explain here:
+I attempted to clean up my strings, but I kept failing the JUnit tests if I added conditional statements; thus, I left it the way it is.
+ 
+
+ 

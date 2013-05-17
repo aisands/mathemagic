@@ -1,0 +1,72 @@
+package lab5;
+
+import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
+import nip.*;
+
+/**
+ * This example demonstrates creating some shapes, adding them to a panel,
+ * and reacting to mouse events that occur on the panel.  NOTE: It is important to
+ * add shapes to the panel after creating them... simply creating them will not
+ * make them appear.
+ * 
+ * RKC refactored and adapted to NIP  September 2009
+ * 
+ * @author Kenneth J. Goldman<BR>
+ * Created Aug 5, 2005
+ */
+public class GraphicsDemo implements MouseMotionListener {
+	
+	private Ellipse oval;       // the inner shape
+	private Rectangle box;      // the box around the shape
+	
+	/*
+	 * The constructor creates the shapes, sets their colors, and puts them on
+	 * the NIP target panel.
+	 */
+	public GraphicsDemo(GraphicsPanel panel) {
+	    // Create an ellipse at (50,75) that is 100 wide and 25 high
+		oval = new Ellipse(50,75,100,25);
+		oval.setLineColor(Color.BLUE);     
+		oval.setFillColor(Color.PINK);
+		panel.add(oval);                   // put the ellipse on the panel
+		
+		// Create a rectangle with the same dimensions
+		box = new Rectangle(50,75,100,25); 
+		panel.add(box);  // put the rectangle on the panel (behind the oval)
+		
+		//
+		// The line below is important. Without it, this object would not
+		//    listen to mouse events and respond in mouseMoved, below
+		//
+		panel.addMouseMotionListener(this);
+	}
+	
+	/*
+	 * Whenever the mouse moves inside the panel, move the shapes to
+	 * the mouse location.
+	 */
+	// @Override
+	public void mouseMoved(MouseEvent me) {
+		moveTo(me.getX(),me.getY());
+	}
+	
+	/*
+	 * Sets the centers of the oval and the box to the given coordinates.
+	 */
+	public void moveTo(int x, int y) {
+		oval.setCenter(x,y);
+		box.setCenter(x,y);
+	}
+	
+	//
+	// Do nothing
+	public void mouseDragged(MouseEvent e) {		
+	}
+
+
+}
+
