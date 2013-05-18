@@ -81,9 +81,11 @@ def sortTest(myList):
 def numTest(testNum,myList):
     totalCount = count(myList,testNum)
     isIn = isin(myList,testNum)
+    place = index(myList,testNum)
+
     countPass = (totalCount == myList.count(testNum))
     isinPass = (isIn == (testNum in myList))
-    indexPass = ((not isIn) or (index == myList.index(testNum)))
+    indexPass = ((not isIn) or (place == myList.index(testNum)))
 
     if not countPass: print("Count test fails.")
     elif not isinPass: print("IsIn test fails.")
@@ -91,7 +93,7 @@ def numTest(testNum,myList):
 
     else:
         if isIn:
-            print("Index: ",index)
+            print("Index: ",place)
             print("Count: ",totalCount)
         else: print(testNum,"is not in myList")
 
