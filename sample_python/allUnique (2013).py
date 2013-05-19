@@ -7,6 +7,9 @@
 # Created:     18/05/2013
 # Copyright:   (c) Adrienne Sands 2013
 #-------------------------------------------------------------------------------
+#to redo using dictionary/ hashes
+
+#using count function (no hashes/dictionary)
 def allUnique(string):
     for i in string:
         if string.count(i)>1:

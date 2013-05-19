@@ -42,4 +42,4 @@ def main():
     print("New string: ",replaceSpaces(string))
 
 if __name__ == '__main__':
-    main()
+    test()
